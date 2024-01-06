@@ -13,6 +13,27 @@ body{
 .active{
     color: #036795!important;
 }
+
+.translate{
+    transform: translateX(0)!important;
+}
+
+.overlay{
+    transform: translateX(0)!important;
+    transition: .5s ease-in-out;
+}
+
+.over{
+    top: 100px;
+    width: 40%;
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(4px);
+    bottom: 0;
+    left: 0;
+    display: none;
+    transform: translateX(-100%);
+}
+
 /* Barre de navigation */
 
 .menu i{
@@ -35,12 +56,18 @@ body{
 .menu nav{
     margin-top: 10px;
     transform: translateX(0);
+    transition: .5s ease-in-out;
 }
 .menu nav ul li a{
     font-size: 19px;
 }
 
 /* Fin Barre de navigation */
+
+.div-acc{
+    background: linear-gradient(to left top, #036795, #033E5C);
+    height: 50vh;
+}
 
 /* Media screen */
 
@@ -54,11 +81,12 @@ body{
     nav{
         position: absolute;
         top: 100px;
-        left: 50%;
+        left: 40%;
         right: 0;
         color: #fff;
         bottom: 0;
         z-index: 50;
+        margin-top: 0!important;
         background-color: #036795;
         transform: translateX(100%)!important;
     }
@@ -67,6 +95,9 @@ body{
     }
     nav ul li{
         width: 100%;
+    }
+    .over{
+        display: block;
     }
 }
 
