@@ -48,7 +48,9 @@ body{
     padding: 0 30px;
     height: 100px;
     top: 0;
+    width: 100%;
     z-index: 100;
+    background-color: #fff;
 }
 
 .menu .home img{
@@ -56,7 +58,7 @@ body{
     height: 60px;
 }
 .menu nav{
-    margin-top: 10px;
+    margin-top: 7px;
     transform: translateX(0);
     transition: .5s ease-in-out;
 }
@@ -69,6 +71,7 @@ body{
 .div-acc{
     background: linear-gradient(to right, #036795, #036795, #033E5C);
     padding: 20px 30px;
+    margin-top: 100px;
 }
 
 .div-acc .txt-acc{
@@ -78,6 +81,10 @@ body{
 
 .div-acc img{
     width: 55%;
+}
+
+.div-acc .txt-acc h1{
+    font-size: 70px;
 }
 
 .div-acc .txt-acc a button{
@@ -92,6 +99,24 @@ body{
     background-color: transparent;
     border: 2px solid #fff;
     color: #fff;
+}
+
+.sec-about{
+    padding: 40px 200px;
+}
+
+.sec-about .txt-about a button{
+    height: 45px;
+    width: 50%;
+    color: #fff;
+    background: linear-gradient(to right, #036795, #033E5C);
+    transition: .2s ease-in-out;
+}
+
+.div-acc .txt-about a button:hover{
+    background-color: transparent;
+    border: 2px solid #036795;
+    color: #036795;
 }
 
 /* Media screen */
@@ -137,6 +162,13 @@ body{
     }
     .div-acc img{
         width: 100%;
+    }
+    .div-acc .txt-acc h1{
+        font-size: 55px;
+    }
+    .sec-about{
+        padding: 15px 10px;
+        flex-direction: column-reverse;
     }
 }
 
