@@ -16,6 +16,7 @@ body{
 
 .translate{
     transform: translateX(0)!important;
+    background-color: #036795!important;
 }
 
 .overlay{
@@ -36,7 +37,7 @@ body{
 
 /* Barre de navigation */
 
-.menu i{
+.menu .btnBurger{
     display: block;
     right: 5px;
     display: none;
@@ -125,7 +126,7 @@ body{
     .menu{
         padding: 0 4px;
     }
-    .menu i{
+    .menu .btnBurger{
         display: block;
     }
     nav{
@@ -136,10 +137,11 @@ body{
         color: #fff;
         bottom: 0;
         z-index: 50;
-        margin-top: 0!important;
-        background-color: #036795;
+        margin-top: initial;
         transform: translateX(100%)!important;
+        background-color: #036795!important;
     }
+
     nav ul{
         flex-direction: column;
     }
@@ -164,7 +166,7 @@ body{
         width: 100%;
     }
     .div-acc .txt-acc h1{
-        font-size: 55px;
+        font-size: 45px;
     }
     .sec-about{
         padding: 15px 10px;
