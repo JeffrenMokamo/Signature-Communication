@@ -7,7 +7,7 @@ body{
     font-family: "calibri"!important;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: hidden!important;
 }
 
 .active{
@@ -26,7 +26,7 @@ body{
 .over{
     top: 100px;
     width: 40%;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .8);
     backdrop-filter: blur(2px);
     bottom: 0;
     left: 0;
@@ -38,10 +38,10 @@ body{
 
 .menu i{
     display: block;
-    right: 10px;
+    right: 5px;
     display: none;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 25px;
 }
 
 .menu{
@@ -67,15 +67,38 @@ body{
 /* Fin Barre de navigation */
 
 .div-acc{
-    background: linear-gradient(to left top, #036795, #033E5C);
-    height: 50vh;
+    background: linear-gradient(to right, #036795, #036795, #033E5C);
+    padding: 20px 30px;
+}
+
+.div-acc .txt-acc{
+    width: 45%;
+    margin-left: 5%;
+}
+
+.div-acc img{
+    width: 55%;
+}
+
+.div-acc .txt-acc a button{
+    height: 45px;
+    width: 50%;
+    color: #036795;
+    background-color: #fff;
+    transition: .2s ease-in-out;
+}
+
+.div-acc .txt-acc a button:hover{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
 }
 
 /* Media screen */
 
 @media (max-width: 968px){
     .menu{
-        padding: 0 5px;
+        padding: 0 4px;
     }
     .menu i{
         display: block;
@@ -98,8 +121,22 @@ body{
     nav ul li{
         width: 100%;
     }
+    .menu nav ul li a{
+        font-size: 18px;
+    }
     .over{
         display: block;
+    }
+    .div-acc{
+        padding: 15px 10px;
+        flex-direction: column;
+    }
+    .div-acc .txt-acc{
+        width: 100%;
+        margin-left: initial;
+    }
+    .div-acc img{
+        width: 100%;
     }
 }
 
