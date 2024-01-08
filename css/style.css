@@ -40,10 +40,10 @@ body{
 
 .menu .btnBurger{
     display: block;
-    right: 5px;
+    right: 10px;
     display: none;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .menu{
