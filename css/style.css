@@ -49,7 +49,7 @@ body{
 
 .menu .btnBurger{
     display: block;
-    right: 10px;
+    right: 15px;
     display: none;
     font-weight: bold;
     font-size: 35px;
@@ -118,15 +118,15 @@ body{
     padding: 40px 200px;
 }
 
-.sec-about .txt-about a button{
+.sec-about .txt-about a button, .btnReserv{
     height: 45px;
     width: 50%;
     color: #fff;
-    background: linear-gradient(to right, #036795, #033E5C);
+    background-color: #036795;
     transition: .2s ease-in-out;
 }
 
-.div-acc .txt-about a button:hover{
+.sec-about .txt-about a button:hover{
     background-color: transparent;
     border: 2px solid #036795;
     color: #036795;
