@@ -6,12 +6,21 @@
 body{
     font-family: "calibri"!important;
     padding: 0;
-    overflow-X: hidden!important;
     margin: 0;
+    overflow-X: hidden!important;
 }
 
 .active{
     color: #036795!important;
+}
+
+.call-icon{
+    background-color: #036795;
+    width: 50px;
+}
+
+.num{
+    margin-left: 20px;
 }
 
 .translate{
@@ -75,6 +84,7 @@ body{
     background: linear-gradient(to right, #036795, #036795, #033E5C);
     padding: 20px 30px;
     margin-top: 100px;
+    width: 100%!important;
 }
 
 .div-acc .txt-acc{
@@ -122,9 +132,22 @@ body{
     color: #036795;
 }
 
+.nousChoisir{
+    padding: 50px;
+    width: 100%;
+}
+
+.nousChoisir h2{
+    color: #036795;
+}
+
+.enseign{
+    padding: 30px 100px;
+}
+
 /* Media screen */
 
-@media (max-width: 968px){
+@media (max-width: 1000px){
     .menu{
         padding: 0 4px;
     }
@@ -138,10 +161,8 @@ body{
         right: 0;
         color: #fff;
         bottom: 0;
-        z-index: 50;
         margin-top: initial;
         transform: translateX(100%)!important;
-        background-color: #036795!important;
     }
 
     nav ul{
@@ -174,6 +195,30 @@ body{
         padding: 15px 10px;
         flex-direction: column-reverse;
     }
+    .call{
+        flex-direction: column;
+        align-items: start!important;
+    }
+    .num{
+        margin-left: initial;
+    }
+    .nousChoisir{
+        padding: 30px 10px;
+    }
+    .nousChoisir .flex{
+        flex-direction: column;
+    }
+    .nousChoisir .flex .grid{
+        width: 100%;
+    }
+    
+    .nousChoisir .flex .img{
+        width: 100%;
+    }
+    .enseign{
+        padding: 30px 10px;
+    }
+    
 }
 
 /* Fin media screen */
