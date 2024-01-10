@@ -189,6 +189,44 @@ footer hr{
 
 /* fin footer*/
 
+/* Contact */
+
+.contact{
+    margin-top: 100px;
+    padding: 50px 0;
+}
+
+.contact h2{
+    color: #036795;
+}
+
+.contact .formContact{
+    padding: 10px;
+    background-color: #036795;
+}
+
+.contact .formContact .champs{
+    background-color: rgba(217, 217, 217, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.contact .formContact .champs input, .contact .formContact .champs textarea{
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    color: #fff;
+}
+
+.contact .formContact .champs input::placeholder, .contact .formContact .champs textarea::placeholder{
+    color: #fff;
+}
+
+.contact .formContact button{
+    background-color: #033E5C;
+}
+
+/* Fin Conatct */
+
 /* Media screen */
 
 @media (max-width: 1000px){
