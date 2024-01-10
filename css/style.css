@@ -24,6 +24,7 @@ body{
     border-bottom: 1px solid rgba(217, 217, 217, 0.5)!important;
     background-color: rgba(255, 255, 255, 0.8)!important;
     backdrop-filter: blur(3px)!important;
+    height: 100px!important;
 }
 
 .active{
@@ -229,6 +230,35 @@ footer hr{
 
 /* Fin Conatct */
 
+/* A bout */
+
+.about{
+    margin-top: 100px;
+    width: 100%;
+}
+
+.about .acc-about{
+    width: 100%;
+}
+
+.about .acc-about .txt-about{
+    padding: 5%;
+}
+
+.about .txt{
+    padding: 50px 300px;
+}
+
+.about .membres h2{
+    color: #036795;
+}
+
+.about .membres{
+    background-color: #036795;
+}
+
+/* Fin A bout */
+
 /* Media screen */
 
 @media (max-width: 1000px){
@@ -307,6 +337,12 @@ footer hr{
     }
     .contact .formContact{
         padding: 10px 0;
+    }
+    .about .acc-about .txt-about{
+        padding: 80px 80px 0 80px;
+    }
+    .about .txt{
+        padding: 0 70px;
     }
     
 }
