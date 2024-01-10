@@ -41,7 +41,6 @@ body{
 }
 
 .translate{
-    background-color: #036795!important;
     transform: translateX(0)!important;
 }
 
@@ -273,10 +272,10 @@ footer hr{
         top: 100px;
         left: 40%;
         right: 0;
-        color: #fff;
         bottom: 0;
         margin-top: initial;
         transform: translateX(100%)!important;
+        background-color: #fff!important;
     }
 
     nav ul{
@@ -339,10 +338,10 @@ footer hr{
         padding: 10px 0;
     }
     .about .acc-about .txt-about{
-        padding: 80px 80px 0 80px;
+        padding: 30px 30px 0 30px;
     }
     .about .txt{
-        padding: 0 70px;
+        padding: 0 20px;
     }
     
 }
