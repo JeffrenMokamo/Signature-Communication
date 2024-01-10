@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,48 +7,81 @@
     <link rel="shortcut icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>A propos</title>
+    <title>Signature :: A propos</title>
 </head>
 <body>
-    
-    <div class="fixed top-0 bg-white nav-bar flex w-full items-center">
-        <label for="menu-bottom"><i class="bi bi-list"></i></label>
-        <input type="checkbox" id="menu-bottom">
-        <div class="logo">
-            <a href="index.html" class="flex items-center">
-                <img src="images/logo.png" alt="" class="w-12">
-                <h2 class="font-semibold">ELITE AVENIR</h2>
-            </a>
-        </div>
-    
-        <nav>
-            <ul class="relative">
-                <li><a href="index.html" class="links-nav-ba active-l">Accueil</a></li>
-                <li><a href="about.html" class="links-nav-ba">Apropos</a></li>
-                <li><a href="service.html">Nos formations +</a>
-                    <ul class="absolute">
-                        <li class="flex items-center">
-                            <i class="bi bi-person-raised-hand"></i>
-                            <a desabled href="form-anglais.html" class="links-nav-ba">Anglais</a>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="bi bi-laptop"></i>
-                            <a href="form-informatique.html" class="links-nav-ba">Informatique</a>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="bi bi-car-front-fill"></i>
-                            <a href="form-auto-ecole.html" class="links-nav-ba">Auto-école</a>
-                        </li>
-                        <li class="flex items-center">
-                        <i class="bi bi-backpack-fill"></i>
-                            <a href="form-eleves.html" class="links-nav-ba">Pour élèves</a>
-                        </li>
-                    </ul>
+
+
+    <div class="menu fixed d-flex align-items-center justify-between">
+        <i onclick="barNav()" class="bi bi-list absolute text-3xl text-dark cursor-pointer btnBurger"></i>
+        <a href="index.html" class="d-flex align-items-center home">
+            <img src="images/logo.png" alt="logo-signature" class="logo mr-2">
+            <h3 class="text-2xl font-semibold text-dark">Signature</h3>
+        </a>
+        <nav class="bar-nav">
+
+            <ul class="navbar">
+                <li class="nav-item p-2">
+                    <a href="index.html" class="nav-link font-semibold"><i class="bi bi-house-door-fill"></i> Portail</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="about.html" class="nav-link font-semibold"><i class="bi bi-bookmark-fill"></i> Qui sommes nous</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="service.html" class="nav-link font-semibold"><i class="bi bi-cart-fill"></i> Nous vous offrons</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="contact.html" class="nav-link font-semibold"><i class="bi bi-telephone-fill"></i> Contact</a>
                 </li>
             </ul>
         </nav>
-        <button class=""><a href="contact.html">Contact</button></a>
     </div>
+
+    <div class="about">
+
+    </div>
+    
+    <footer class="w-full md:flex justify-around p-3 mt-5">
+
+        <div class="logo mb-4">
+            <img src="images/logo.png" alt="">
+        </div>
+
+        <div class="links mb-5">
+            <div class="adresse">
+                <h4 class="font-bold text-2xl mb-4">Nos Adresses</h4>
+
+                <hr class="mb-4 rounded">
+
+                <p class="mb-2 font-semibold"><span class="font-bold"><i class="bi bi-geo-alt-fill "></i></span> 14 <sup>ième</sup> Rue Limete Poids Lourds</p>
+                <p class="mb-2 font-semibold"><span class="font-bold"><i class="bi bi-envelope-fill "></i></span> Signaturecommunication@gmail.com</p>
+                <p class="mb-4 font-semibold"><span class="font-bold"><i class="bi bi-telephone-fill "></i></span> +243 99 92 37 023 </p>
+                <div class="">
+                    <i class="call-icon text-white p-3 bi bi-facebook"></i>
+                    <i class="call-icon text-white p-3 bi bi-tiktok"></i>
+                    <i class="call-icon text-white p-3 bi bi-instagram"></i>
+                    <i class="call-icon text-white p-3 bi bi-whatsapp"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="liens mb-5">
+            <h4 class="font-bold text-2xl mb-4">Liens Utiles</h4>
+
+            <hr class="mb-4 rounded">
+
+            <p class="mb-3 font-semibold"><a class="text-dark" href="about.html">A propos de nous</a></p>
+            <p class="mb-3 font-semibold"><a class="text-dark" href="service.html">Nos sercives</a></p>
+            <p class="mb-3 font-semibold"><a class="text-dark" href="contact.html">Nous Contacter</a></p>
+            <p class="mb-3 font-semibold"><a class="text-dark" href="#">Politique de Confidentialité</a></p>
+            <p class="mb-4 font-semibold"><a class="text-dark" href="#">Gallerie</a></p>
+        </div>
+
+    </footer>
+
+    <p class="copy p-3 text-center w-full font-bold text-white"><span>&copy</span> Signature Communication. Tous Droits Reservés</p>
+
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

@@ -202,13 +202,13 @@ footer hr{
 
 .contact .formContact{
     background-color: #036795;
-    padding: 10px 100px;
+    padding: 10px 200px;
 }
 
 .contact .formContact .champs{
     background-color: rgba(217, 217, 217, 0.5);
     backdrop-filter: blur(5px);
-    padding: 8px;
+    padding: 10px;
 }
 
 .contact .formContact .champs input, .contact .formContact .champs textarea{
