@@ -21,7 +21,7 @@
             <img src="images/logo.png" alt="logo-signature" class="logo mr-2">
             <h3 class="text-2xl font-semibold text-dark">Signature</h3>
         </a>
-        <nav class="bar-nav bg-white">
+        <nav class="bar-nav">
 
             <ul class="navbar">
                 <li class="nav-item p-2">
@@ -177,9 +177,31 @@
     </div>
 
     <div class="realisations mb-5">
-        <h1 class="text-3xl mb-4 text-center font-bold text-white">Nos différentes réalisations</h1>
+        <h1 class="text-3xl mb-5 text-center font-bold text-white">Nos différentes réalisations</h1>
 
-        
+        <section class="splide" aria-labelledby="carousel-heading">
+
+            <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev">
+                    <i class="bi bi-arrow-left"></i>
+                </button>
+                <button class="splide__arrow splide__arrow--next">
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+          
+            <div class="splide__track text-center">
+                  <ul class="splide__list">
+                      <li class="splide__slide"><img src="images/images.avif" alt=""></li>
+                      <li class="splide__slide"><img src="images/images.avif" alt=""></li>
+                      <li class="splide__slide"><img src="images/images.avif" alt=""></li>
+
+                      <li class="splide__slide"><img src="images/images.avif" alt=""></li>
+                      <li class="splide__slide"><img src="images/images.avif" alt=""></li>
+                      <li class="splide__slide"><img src="images/images.avif" alt=""></li>
+                  </ul>
+            </div>
+          </section>
     </div>
 
     <footer class="w-full md:flex justify-around p-3 mt-5">
@@ -217,6 +239,7 @@
             <p class="mb-3 font-semibold"><a class="text-dark" href="contact.html">Nous Contacter</a></p>
             <p class="mb-3 font-semibold"><a class="text-dark" href="#">Politique de Confidentialité</a></p>
             <p class="mb-4 font-semibold"><a class="text-dark" href="#">Gallerie</a></p>
+            <p class="mb-4 font-semibold"><a class="text-dark" href="#">Se Connecter</a></p>
         </div>
 
     </footer>
@@ -224,13 +247,30 @@
     <p class="copy p-3 text-center w-full font-bold text-white"><span>&copy</span> Signature Communication. Tous Droits Reservés</p>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>
         AOS.init();
       </script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="javascript/main.js"></script>
+
+    <script>
+        var splide = new Splide( '.splide', {
+            width: '100%',
+            type: 'loop',
+            perPage: 3,
+            gap: '1em',
+            autoplay: 'true',
+            breakpoints: {
+                1000: {
+                    perPage: 1,
+                },
+  }
+            } );
+
+            splide.mount();
+    </script>
 </body>
 </html>
