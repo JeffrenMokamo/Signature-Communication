@@ -175,8 +175,8 @@ body{
 
 
 footer img{
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
 }
 
 footer hr{
@@ -201,18 +201,20 @@ footer hr{
 }
 
 .contact .formContact{
-    padding: 10px;
     background-color: #036795;
+    padding: 10px 100px;
 }
 
 .contact .formContact .champs{
     background-color: rgba(217, 217, 217, 0.5);
     backdrop-filter: blur(5px);
+    padding: 8px;
 }
 
 .contact .formContact .champs input, .contact .formContact .champs textarea{
     background-color: transparent;
     outline: none;
+    margin-left: 10px;
     width: 100%;
     color: #fff;
 }
@@ -302,6 +304,9 @@ footer hr{
     }
     .realisations{
         padding: 40px 10px;
+    }
+    .contact .formContact{
+        padding: 10px 0;
     }
     
 }
