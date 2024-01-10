@@ -1,7 +1,7 @@
 const btnBurger = document.querySelector('.btnBurger');
 const navBar = document.querySelector('.bar-nav');
 
-btnBurger.onclick = () => {
+function barNav(){
     navBar.classList.toggle('translate');
 
     if(navBar.classList.contains('translate')){
@@ -14,4 +14,15 @@ btnBurger.onclick = () => {
         btnBurger.classList.remove('bi-x-lg');
         document.querySelector('.over').classList.remove('overlay');
     }
+}
+
+window.onscroll = () =>{
+
+    if(window.scrollY >= 40){
+        document.querySelector('.menu').classList.add('scrol');
+    }
+    else{
+        document.querySelector('.menu').classList.remove('scrol');
+    }
+
 }
