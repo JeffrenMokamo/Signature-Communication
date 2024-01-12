@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="images/logo.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Signature :: A propos</title>
+    <title>Signature :: Nos Services</title>
 </head>
 <body>
 
@@ -20,7 +21,7 @@
             <img src="images/logo.png" alt="logo-signature" class="logo mr-2">
             <h3 class="text-2xl font-semibold text-dark">Signature</h3>
         </a>
-        <nav class="bar-nav bg-white">
+        <nav class="bar-nav">
 
             <ul class="navbar">
                 <li class="nav-item p-2">
@@ -39,6 +40,56 @@
         </nav>
     </div>
 
+    <div class="acc-services mb-5 md:flex items-center w-full">
+        <h1 class="font-bold mb-4 text-white" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Signature Communication vous offre plusieurs services de qualité</h1>
+        <img src="images/images.avif" alt="" class="">
+    </div>
+    
+    <div class="nosServices mb-5">
+
+        <div class="services w-full md:grid grid-cols-2 gap-5">
+            <div class="service mb-4">
+                <h2 class="font-bold text-3xl mb-3">Branding</h2>
+                <hr class="mb-3 col-md-8">
+                <img src="images/img-acc.avif" alt="" class="mb-3">
+                <p class="md:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odio ratione iure deserunt exercitationem error.</p>
+            </div>
+            <div class="service mb-4">
+                <h2 class="font-bold text-3xl mb-3">Conception & Réalisations</h2>
+                <hr class="mb-3 col-md-8">
+                <img src="images/img-acc.avif" alt="" class="mb-3">
+                <p class="md:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odio ratione iure deserunt exercitationem error.</p>
+            </div>
+            <div class="service mb-4">
+                <h2 class="font-bold text-3xl mb-3">Impression</h2>
+                <hr class="mb-3 col-md-8">
+                <img src="images/img-acc.avif" alt="" class="mb-3">
+                <p class="md:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odio ratione iure deserunt exercitationem error.</p>
+            </div>
+            <div class="service mb-4">
+                <h2 class="font-bold text-3xl mb-3">Amenagement & Montage panneaux</h2>
+                <hr class="mb-3 col-md-8">
+                <img src="images/img-acc.avif" alt="" class="mb-3">
+                <p class="md:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odio ratione iure deserunt exercitationem error.</p>
+            </div>
+            <div class="service mb-4">
+                <h2 class="font-bold text-3xl mb-3">Btl</h2>
+                <hr class="mb-3 col-md-8">
+                <img src="images/img-acc.avif" alt="" class="mb-3">
+                <p class="md:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odio ratione iure deserunt exercitationem error.</p>
+            </div>
+            <div class="service mb-4">
+                <h2 class="font-bold text-3xl mb-3">Evenementiel</h2>
+                <hr class="mb-3 col-md-8">
+                <img src="images/img-acc.avif" alt="" class="mb-3">
+                <p class="md:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odio ratione iure deserunt exercitationem error.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="nousContacter mb-5 p-3">
+        pmpmpm
+    </div>
     
     
     <footer class="w-full md:flex justify-around p-3 mt-5">
@@ -82,13 +133,23 @@
 
     <p class="copy p-3 text-center w-full font-bold text-white"><span>&copy</span> Signature Communication. Tous Droits Reservés</p>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="javascript/main.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
+
+    <script>
+        var splide = new Splide( '.splide', {
+
+            direction   : 'ttb',
+            wheel       : true,
+            releaseWheel: true,
+            })
+            splide.mount();
+    </script>
 </body>
 </html>

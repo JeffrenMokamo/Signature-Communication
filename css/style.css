@@ -258,6 +258,38 @@ footer hr{
 
 /* Fin A bout */
 
+/* Services */
+
+.acc-services{
+    background: linear-gradient(to right, #036795, #036795, #033E5C);
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.acc-services h1{
+    width: 40%;
+    font-size: 70px;
+    margin-left: 150px;
+}
+
+.acc-services img{
+    width: 60%;
+}
+
+.nosServices .services{
+    padding: 70px 200px;
+}
+
+.nosServices .services .service img{
+    width: 100%;
+}
+
+.nousContacter{
+    background-color: #036795;
+}
+
+/* Fin Srvices* /
+
 /* Media screen */
 
 @media (max-width: 1000px){
@@ -343,7 +375,20 @@ footer hr{
     .about .txt{
         padding: 0 20px;
     }
-    
+    .acc-services{
+        padding: 10px;
+    }
+    .acc-services h1{
+        width: 100%;
+        margin-left: initial;
+        font-size: 45px;
+    }
+    .acc-services img{
+        width: 100%;
+    }
+    .nosServices .services{
+        padding: 50px 20px;
+    }
 }
 
 /* Fin media screen */
