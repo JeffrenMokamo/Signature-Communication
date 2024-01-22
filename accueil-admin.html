@@ -12,13 +12,83 @@
 <body>
     
     <div class="admin w-full">
-        <div class="menu w-full flex items-center justify-center">
+        <div class="menu w-full flex items-center justify-between mb-3">
             <h1 class="font-bold text-4xl">Dashbod</h1>
 
-            <div class="flex">
-                <p class="font-semibol"><span>Mpezo</span></p>
+            <div class="flex gap-2 items-center">
+                <p class="font-bold"><span>Mpezo</span> </p>
                 <img src="images/images.avif" alt="">
             </div>
+        </div>
+
+        <div class="gestion p-5">
+            <h1 class="text-3xl font mb-3">Gestion des panneaux</h1>
+            <hr class="mb-5">
+
+            <form action="" method="" class="mb-5">
+
+                <div class="row gap-2 mb-4">
+                    <div class="form-group col">
+                        <label for="idPanneau">Id Panneau :</label>
+                        <input type="text" class="mb-3 form-control" id="idPanneau">
+                    </div>
+
+                    <div class="form-group col">
+                        <label for="price">Prix :</label>
+                        <input type="number" class="mb-3 form-control" id="prce">
+                    </div>
+
+                    <div class="form-group col">
+                        <label for="adresse">Adresse :</label>
+                        <input type="text" class="mb-3 form-control" id="adresse">
+                    </div>
+                </div>
+
+                <div class="row gap-2 mb-4">
+                    <div class="form-group col">
+                        <label for="dimension">Dimension :</label>
+                        <input type="text" class="mb-3 form-control" id="dimension">
+                    </div>
+
+                    <div class="form-group col">
+                        <label for="face">Face :</label>
+                        <input type="text" class="mb-3 form-control" id="face">
+                    </div>
+
+                    <div class="form-group col">
+                        <label for="dispo">Disponibilite :</label>
+                        <input type="text" class="mb-3 form-control" id="dispo">
+                    </div>
+                </div>
+
+                <div class="row gap-2">
+
+                    <button class="col font-bold text-white btn btn-info">Enregistrer</button>
+                    <button class="col font-bold text-white btn btn-success">Afficher</button>
+                    <button class="col font-bold text-white btn btn-primary">Modifier</button>
+                    <button class="col font-bold text-white btn btn-danger">Supprimer</button>
+
+                </div>
+
+            </form>
+
+            <hr class="mb-4">
+
+            <table class="table">
+
+                <thead>
+                    <tr>
+                        <th>ID Panneau</th>
+                        <th>Prix</th>
+                        <th>Adresse</th>
+                        <th>Dimension</th>
+                        <th>Face</th>
+                        <th>Disponibilité</th>
+                    </tr>
+                </thead>
+
+            </table>
+
         </div>
     </div>
 
